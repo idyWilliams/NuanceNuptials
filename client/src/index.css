@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(25, 20%, 98%);
+  --foreground: hsl(220, 15%, 20%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(220, 15%, 20%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(220, 15%, 20%);
+  --primary: hsl(15, 35%, 75%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(210, 25%, 35%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(25, 15%, 95%);
+  --muted-foreground: hsl(220, 10%, 55%);
+  --accent: hsl(15, 50%, 92%);
+  --accent-foreground: hsl(220, 15%, 20%);
+  --destructive: hsl(0, 65%, 55%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(25, 10%, 90%);
+  --input: hsl(25, 10%, 96%);
+  --ring: hsl(15, 35%, 75%);
+  --chart-1: hsl(15, 35%, 75%);
+  --chart-2: hsl(159, 100%, 36%);
+  --chart-3: hsl(42, 92%, 56%);
+  --chart-4: hsl(147, 78%, 42%);
+  --chart-5: hsl(341, 75%, 51%);
+  --sidebar: hsl(0, 0%, 100%);
+  --sidebar-foreground: hsl(220, 15%, 20%);
+  --sidebar-primary: hsl(15, 35%, 75%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(15, 50%, 92%);
+  --sidebar-accent-foreground: hsl(220, 15%, 20%);
+  --sidebar-border: hsl(25, 10%, 90%);
+  --sidebar-ring: hsl(15, 35%, 75%);
+  --font-sans: Inter, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: Menlo, monospace;
+  --radius: 12px;
+  --shadow-2xs: 0px 2px 0px 0px hsl(15, 35%, 75% / 0.00);
+  --shadow-xs: 0px 2px 0px 0px hsl(15, 35%, 75% / 0.00);
+  --shadow-sm: 0px 2px 0px 0px hsl(15, 35%, 75% / 0.00), 0px 1px 2px -1px hsl(15, 35%, 75% / 0.00);
+  --shadow: 0px 2px 0px 0px hsl(15, 35%, 75% / 0.00), 0px 1px 2px -1px hsl(15, 35%, 75% / 0.00);
+  --shadow-md: 0px 2px 0px 0px hsl(15, 35%, 75% / 0.00), 0px 2px 4px -1px hsl(15, 35%, 75% / 0.00);
+  --shadow-lg: 0px 2px 0px 0px hsl(15, 35%, 75% / 0.00), 0px 4px 6px -1px hsl(15, 35%, 75% / 0.00);
+  --shadow-xl: 0px 2px 0px 0px hsl(15, 35%, 75% / 0.00), 0px 8px 10px -1px hsl(15, 35%, 75% / 0.00);
+  --shadow-2xl: 0px 2px 0px 0px hsl(15, 35%, 75% / 0.00);
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
+}
+
+.dark {
+  --background: hsl(0, 0%, 0%);
+  --foreground: hsl(200, 7%, 91%);
+  --card: hsl(228, 10%, 10%);
+  --card-foreground: hsl(0, 0%, 85%);
+  --popover: hsl(0, 0%, 0%);
+  --popover-foreground: hsl(200, 7%, 91%);
+  --primary: hsl(15, 35%, 75%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(195, 15%, 95%);
+  --secondary-foreground: hsl(210, 25%, 8%);
+  --muted: hsl(0, 0%, 9%);
+  --muted-foreground: hsl(210, 3%, 46%);
+  --accent: hsl(205, 70%, 8%);
+  --accent-foreground: hsl(15, 35%, 75%);
+  --destructive: hsl(0, 65%, 55%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(210, 5%, 15%);
+  --input: hsl(207, 28%, 18%);
+  --ring: hsl(15, 35%, 75%);
+  --chart-1: hsl(15, 35%, 75%);
+  --chart-2: hsl(159, 100%, 36%);
+  --chart-3: hsl(42, 92%, 56%);
+  --chart-4: hsl(147, 78%, 42%);
+  --chart-5: hsl(341, 75%, 51%);
+  --sidebar: hsl(228, 10%, 10%);
+  --sidebar-foreground: hsl(0, 0%, 85%);
+  --sidebar-primary: hsl(15, 35%, 75%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(205, 70%, 8%);
+  --sidebar-accent-foreground: hsl(15, 35%, 75%);
+  --sidebar-border: hsl(205, 16%, 26%);
+  --sidebar-ring: hsl(15, 35%, 75%);
+  --font-sans: Inter, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: Menlo, monospace;
+  --radius: 12px;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, 
+    hsl(15, 35%, 75% / 0.1) 0%, 
+    hsl(25, 20%, 98%) 50%, 
+    hsl(15, 50%, 92% / 0.3) 100%);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px hsl(220, 15%, 20% / 0.1);
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+}
+
+.vendor-badge {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+}
