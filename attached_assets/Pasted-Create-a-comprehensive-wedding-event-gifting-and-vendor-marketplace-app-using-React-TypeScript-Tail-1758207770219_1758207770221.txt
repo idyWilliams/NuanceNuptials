@@ -1,0 +1,78 @@
+Create a comprehensive wedding/event gifting and vendor marketplace app using React TypeScript, Tailwind CSS, and Node.js with TypeScript backend. Build a modern, clean, and professional UI (not AI-generated looking).
+
+## CORE FEATURES TO IMPLEMENT:
+
+### Frontend (React + TypeScript + Tailwind CSS):
+1. **Multi-user Dashboard System**:
+   - Celebrant dashboard for creating registries and managing events
+   - Guest interface for browsing and purchasing gifts
+   - Vendor portal for managing services and inventory
+   - Clean navigation with role-based access
+
+2. **Registry & Gifting System**:
+   - Product catalog with categories (home, electronics, experiences)
+   - Group gifting functionality with progress tracking
+   - Real-time inventory sync and availability status
+   - Shopping cart with multiple payment options
+   - Wishlist creation and sharing tools
+
+3. **Vendor Marketplace**:
+   - Service provider listings (photographers, venues, caterers, planners)
+   - Portfolio galleries and reviews system
+   - Booking calendar integration
+   - Quote request forms
+
+4. **Event Management Tools**:
+   - Digital invitation system with RSVP tracking
+   - Guest list management
+   - Event timeline and task organization
+   - Memory vault for photos/videos
+
+### Backend (Node.js + TypeScript + Express):
+1. **Authentication & Authorization**:
+   - JWT-based auth system
+   - Role-based permissions (celebrant, guest, vendor)
+   - Secure password handling
+
+2. **Database Models** (use MongoDB/Mongoose):
+   - User profiles with roles
+   - Event/wedding records
+   - Product inventory and pricing
+   - Gift registry items
+   - Vendor services and availability
+   - Group gift contributions
+   - Order management
+
+3. **API Endpoints**:
+   - RESTful APIs for all CRUD operations
+   - Payment processing integration (Stripe/PayPal)
+   - Email notification system
+   - File upload for images/documents
+
+4. **Business Logic**:
+   - Group payment coordination
+   - Inventory management
+   - Commission calculations for vendors
+   - Return/exchange workflows
+
+## TECHNICAL REQUIREMENTS:
+- Use Vite for React development
+- Implement responsive design with Tailwind CSS
+- Type-safe code throughout (strict TypeScript)
+- Modern UI components with proper accessibility
+- Clean, maintainable code structure
+- Environment variable configuration
+- Error handling and validation
+- Loading states and user feedback
+
+## UI/UX SPECIFICATIONS:
+- Modern, professional design (think Airbnb/Stripe aesthetic)
+- Consistent color scheme and typography
+- Intuitive navigation and user flows
+- Mobile-first responsive design
+- Clean forms with proper validation
+- Interactive elements with smooth animations
+- Professional vendor showcases
+- Easy-to-use registry creation flow
+
+Set up the complete project structure with all necessary dependencies, configuration files, and implement the core functionality with clean, production-ready code.
